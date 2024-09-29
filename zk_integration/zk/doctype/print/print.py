@@ -16,7 +16,8 @@ def print_test(frm):
 			print(f_name)
 			with open (f_name,'w') as f:
 				f.write('heeeeeelo')
-			subprocess.Popen(['lp', '-d', i.decode("utf-8")) ), f_name])
+			subprocess.Popen(['lp', '-d', i.decode("utf-8"), f_name])
+
 
 
 print_test('None')
